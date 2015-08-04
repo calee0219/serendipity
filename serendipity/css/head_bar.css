@@ -1,0 +1,37 @@
+.navbar {
+	background-color: black;
+}
+
+.nav {
+	margin: 10px 0px 0px 0px;
+}
+
+li .dropdown-toggle: hover{
+	background: white;
+	color: black;
+}
+
+.nav a {
+	color: #5a5a5a;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 14px 10px;
+	text-transform: uppercase;
+}
+
+.container li {
+	font-family: 標楷體;
+	display: inline;
+}
+
+.nav font {
+	color: blue;
+}
+
+.pull-left{
+	display: inline-block;
+}
+.pull-right {
+	margin: 35px 0px 0px 0px;
+	display: inline-block;
+}
