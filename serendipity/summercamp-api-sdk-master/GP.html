@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Google Places API Test</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <h2>取得附近餐廳列表</h2>
+  <h3>呼叫方式</h3>
+  <code>
+    GP.getFoods("緯度,經度", callback);
+  </code>
+  <h3>回傳資料範例</h3>
+  <a href="http://lab.dennyhuang.me/GPfood.php?latlng=25.2267773,121.449444">http://lab.dennyhuang.me/GPfood.php?latlng=25.2267773,121.449444</a>
+
+  <h2>透過 place id 取得地點資訊</h2>
+  <h3>呼叫方式</h3>
+  <code>
+    GP.getInfo("id", callback);
+  </code>
+  <h3>回傳資料範例</h3>
+  <a href="http://lab.dennyhuang.me/GPinfo.php?id=ChIJzdcERBmwQjQRvmckUjehWY8">http://lab.dennyhuang.me/GPinfo.php?id=ChIJzdcERBmwQjQRvmckUjehWY8</a>
+
+  <h3>範例:</h3>
+  <div class="demo"></div>
+  <div class="count"></div>
+  <br />
+  第一筆<br />
+  <div class="lat"></div>
+  <div class="lng"></div>
+  <div class="name"></div>
+  <div class="address"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="GP-sdk.js"></script>
+  <script>
+    $(document).ready(function() {
+      GP.getFoods("25.2267773,121.449444", function (res){
+      window.debug = res;
+        $(".count").text("搜尋結果總數："+res.results.length)
+        $(".lat").text("經度："+res.results[0].geometry.location.lat)
+        $(".lng").text("緯度："+res.results[0].geometry.location.lng)
+        GP.getInfo(res.results[0].place_id, function (res){
+          $(".name").text("名稱："+res.result.name)
+          $(".address").text("地址："+res.result.formatted_address)
+        })
+      })
+    })
+  </script>
+</body>
+</html>
