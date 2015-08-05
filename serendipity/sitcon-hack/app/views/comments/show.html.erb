@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @comment.student_name %>
+</p>
+
+<p>
+  <strong>Text area:</strong>
+  <%= @comment.text_area %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @comment.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
