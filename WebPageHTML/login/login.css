@@ -1,0 +1,30 @@
+.center {
+	margin: 0px 150px 0px 150px;
+/*	background-color: gray;*/
+}
+
+#login_box {
+	margin-top: 20px;
+	width: 400px;
+	height: 180px;
+	margin: auto;
+	text-align: center;
+	background-color: #E0E0E0;
+	box-shadow: 5px 5px 3px 3px #4F4F4F;
+	font-size: 20px;
+	font-family: 標楷體;
+	border-radius: 10px;
+}
+
+#submit {
+	width: 90px;
+	height: 43px;
+	box-shadow: 3px 3px 3px 3px #4F4F4F;
+	border-radius: 5px;
+}
+
+
+
+/*body {
+	background-color: gray;
+*/}

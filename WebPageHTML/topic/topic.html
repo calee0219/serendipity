@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/zh/8/84/Wulin.gif">
+	<title>Serendipity</title>
+	<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/head_bar.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap-dropdown.js"></script>
+	<script src="facebook-sdk.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="nav">
+					<ul class="pull-left">
+						<a class="brand" href="../home_page/Serendipity.html"><font size="22px">Serendipity</font></a></li>
+						<li class="active"><a href="../about_us/about_us.html">關於我們</a></li>
+						<li class="dropdown" id="accountmenu">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">課程資源</a><b class="caret"></b>
+							<ul class="dropdown-menu">
+								<li><a href="../elem/elem.html">國小</a></li>
+								<li class="divider"></li>
+								<li><a href="#">國中</a></li>
+								<li class="divider"></li>
+								<li><a href="#">高中</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="topic.html">議題探索</a></li>
+						<li class="active"><a href="#">延伸學習</a></li>
+						<li class="active"><a href="https://groups.google.com/forum/#!forum/serendipitycomment" target="_blank">討論區</a></li>
+					</ul>
+					<ul class="pull-right">
+						<li>&nbsp;&nbsp;</li>
+						<li><a href="../register/register.html">註冊</a></li>
+						<li><a href="../login/login.html">登入</a></li>
+						<li><a href="#">網站管理</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+	</script>
+
+	<div style="margin: 50px 150px 50px 150px">
+		<div class="literature">
+			<h2>文學</h2>
+			<hr style="border: 1px black solid;"/>
+			<table>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://reader.udn.com/act/wetalk/index.html"><img src="literature/文學相對論.png" border="0" title="文學相對論" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">文學相對論</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://chinchuenchi.blogspot.tw/"><img src="literature/青春期。羅毓嘉.png" border="0" title="青春期。羅毓嘉" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">青春期。羅毓嘉</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://yclou.blogspot.tw/"><img src="literature/政治粉餅。羅毓嘉.png" border="0" title="政治粉餅。羅毓嘉" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">政治粉餅。羅毓嘉</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://blog.yam.com/YenC"><img src="literature/時光之硯.JPG" border="0" title="時光之硯" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">時光之硯</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://udn.com/news/ccate/1014/7007"><img src="literature/聯合副刊.png" border="0" title="聯合副刊" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">聯合副刊</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="history">
+			<h2>史學</h2>
+			<hr style="border: 1px black solid;"/>
+			<table>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://journal.ndhu.edu.tw/e_paper/e_paper.php"><img src="history/人社東華.PNG" border="0" title="人社東華" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">人社東華</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://mapstalk.blogspot.tw/"><img src="history/地圖會說話.PNG" border="0" title="地圖會說話" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">地圖會說話</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://gushi.tw/"><img src="history/故事.PNG" border="0" title="故事" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">故事</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://kam-a-tiam.typepad.com/blog/"><img src="history/歷史學柑仔店.PNG" border="0" title="歷史學柑仔店" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">歷史學柑仔店</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="phylocity">
+			<h2>哲學</h2>
+			<hr style="border: 1px black solid;"/>
+			<table>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://wensonyeh.blogspot.tw/"><img src="phylocity/Wenson的隨筆網站.png" border="0" title="Wenson的隨筆網站" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">Wenson的隨筆網站</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://philotech1982.blogspot.tw/"><img src="phylocity/社技哲學.png" border="0" title="社技哲學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">社技哲學</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://www.philomedium.com/"><img src="phylocity/哲學新媒體.png" border="0" title="哲學新媒體" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">哲學新媒體</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="https://philectures.wordpress.com/"><img src="phylocity/哲學講.png" border="0" title="哲學講" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">哲學講</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://chit-philosophy.blogspot.hk/"><img src="phylocity/捷學的哲學.png" border="0" title="捷學的哲學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">捷學的哲學</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://fishandhappiness.blogspot.tw/"><img src="phylocity/魚之樂.png" border="0" title="魚之樂" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">魚之樂</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://thiseven.blogspot.hk/"><img src="phylocity/紫煙亭.png" border="0" title="紫煙亭" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">紫煙亭</p>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+		
+		<div class="social_science">
+			<h2>社會學</h2>
+			<hr style="border: 1px black solid;"/>
+			<table>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://guavanthropology.tw/"><img src="social_science/芭樂人類學.png" border="0" title="芭樂人類學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">芭樂人類學</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://twstreetcorner.org/"><img src="social_science/巷仔口社會學.png" border="0" title="巷仔口社會學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">巷仔口社會學</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://whogovernstw.org/"><img src="social_science/菜市場政治學.png" border="0" title="菜市場政治學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">菜市場政治學</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="science">
+			<h2>科普</h2>
+			<hr style="border: 1px black solid;"/>
+			<table>
+				<tr>
+					<td style="padding: 20px">
+						<a href="http://case.ntu.edu.tw/blog/"><img src="science/CASE讀報.png" border="0" title="CASE讀報" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">CASE讀報</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://pansci.tw/"><img src="science/PanSci 泛科學.png" border="0" title="PanSci 泛科學" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">PanSci 泛科學</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://history.pansci.tw/"><img src="science/科科史上的今天(科普).png" border="0" title="科科史上的今天(科普)" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">科科史上的今天(科普)</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://demo.phy.tw/"><img src="science/國立中央大學物理演示實驗.png" border="0" title="國立中央大學物理演示實驗" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">國立中央大學物理演示實驗</p>
+					</td>
+					<td style="padding: 20px">
+						<a href="http://www.ntsec.gov.tw/User/index.aspx"><img src="science/國立台灣科學教育館.png" border="0" title="國立台灣科學教育館" width="200px" height="150px"></a>
+						<p style="margin-top: 10px; text-align:center;">國立台灣科學教育館</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
